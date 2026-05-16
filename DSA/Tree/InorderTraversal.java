@@ -85,7 +85,7 @@ public class InorderTraversal {
 
         List<Integer> ans = tree.inOrderTraversal(root);
         System.out.println("Tree node in order state -> "+ ans);
-        Stack<TreeNode>st = new Stack<>();
+
 
 
     }
