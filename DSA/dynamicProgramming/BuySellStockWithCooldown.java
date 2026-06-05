@@ -56,6 +56,29 @@ class Solution309{
 
         return t[day][buy]=profit;
     }
+
+
+    public int maxProfitBottomUp(int[] prices) {
+        int n = prices.length;
+        if (n <= 1) return 0;
+
+        int[] t = new int[n];
+        t[0] = 0;
+        t[1] = Math.max(prices[1] - prices[0], 0);
+
+        for (int i = 2; i < n; i++) {
+            // Option 1: don't sell on day i (carry forward)
+            t[i] = t[i - 1];
+
+            // Option 2: sell on day i, having bought on day j
+            for (int j = 0; j < i; j++) {
+                int prevProfit = j >= 2 ? t[j - 2] : 0;  // cooldown: skip j-1
+                t[i] = Math.max(t[i], (prices[i] - prices[j]) + prevProfit);
+            }
+        }
+
+        return t[n - 1];
+    }
 }
 public class BuySellStockWithCooldown {
 
