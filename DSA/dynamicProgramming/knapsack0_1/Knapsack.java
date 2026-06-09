@@ -128,7 +128,7 @@ class Solution {
      *  sub-problem at that index where maxprofit stores as per n and W
      */
 
-    public int knapsack(int W, int[] val, int[] weight) {
+    public int knapsackTopDown(int W, int[] val, int[] weight) {
 
         int n = val.length;
 
