@@ -116,3 +116,6 @@ public class BruteApproach{
     }
 }
 
+/*
+Ride fare calculator. A ride's fare is computed by a pricing rule: NormalPricing, SurgePricing (multiplies by a surge factor), or PoolPricing (discounts for shared rides). The Ride holds a pricing strategy chosen at runtime. Adding a new pricing rule must not touch Ride or existing rules.
+ */
