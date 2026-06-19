@@ -6,7 +6,7 @@ public class NumberOfProvinces547 {
         // n represents the total number of cities (nodes) in the graph
         int n = isConnected.length;
 
-        // visited array to keep track of cities that have already been explored
+        // visited array to keep track of cities that have already been explored with
         boolean[] visited = new boolean[n];
 
         // Counter to track the number of connected components (provinces)
