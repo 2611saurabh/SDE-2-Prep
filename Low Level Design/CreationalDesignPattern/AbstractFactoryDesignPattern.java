@@ -113,3 +113,9 @@ public class AbstractFactoryDesignPattern {
         sofa.sitOn();
     }
 }
+/*
+
+1.Factory,Builder,Abstract Factory, PrototType Design Pattern
+2. SQL filter Query
+3. Leetcode Maximum Consicutive 1, Missing Number
+ */
