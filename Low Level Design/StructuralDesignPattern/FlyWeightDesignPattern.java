@@ -88,6 +88,6 @@ public class FlyWeightDesignPattern {
             forest.plantTree(i, i, "Oak", "Green", "Rough");
         }
 
-        System.out.println("Planted 1 million trees.");
+        System.out.println("Planted 1 million trees. ");
     }
 }
