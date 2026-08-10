@@ -98,6 +98,6 @@ public class TemplateDesignPattern {
         System.out.println(" ");
 
         NotificationSender smsSender = new SMSNotification();
-        smsSender.send("9876543210", "Your OTP is 4567.");
+        smsSender.send("987654321120", "Your OTP is 4567.");
     }
 }
